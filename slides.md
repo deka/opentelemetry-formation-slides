@@ -113,7 +113,7 @@ Transition: fade-out
 ---
 # Introduction à l'observabilité
 
-![Observabilité vs supervision](./images/observability.png)
+![Observabilité vs supervision](/images/observability.png)
 
 <Onea class="absolute left-10 bottom-5"/>
 
@@ -246,7 +246,7 @@ level: 2
 #  Zoom sur le traçage distribué
 <p class="absolute right-5 top-5 text-3xl"> Observabilité </p>
 
-<img src="./images/microservice-architecture.svg" alt="Architecture distribuée" />
+<img src="/images/microservice-architecture.svg" alt="Architecture distribuée" />
 
 ---
 transition: fade-out
@@ -276,7 +276,7 @@ transition: fade-out
 ---
 #  Présentation d'OpenTelemetry
 
-<img class="mt-12" src="./images/openTelemetry-pipeline.png" alt="OpenTelemetry Pipeline"/>
+<img class="mt-12" src="/images/openTelemetry-pipeline.png" alt="OpenTelemetry Pipeline"/>
 
 <Onea class="absolute left-10 bottom-5"/>
 
@@ -569,7 +569,7 @@ Selon les besoins, il existe plusieurs archiectures possibles pour la collecte d
 - <b>Agent + Collecteur</b> : Un processus en arrière-plan lit les logs et les pousse et les envoie à un collecteur
 - <b>SDK</b> : Une bibliothèque intégrée à l'application pour capturer les logs et les envoyer à un collecteur
 
-<img src="./images/app-to-file-logs-otelcol.png" alt="Architecture de collecte des logs" />
+<img src="/images/app-to-file-logs-otelcol.png" alt="Architecture de collecte des logs" />
 
 
 ---
