@@ -60,3 +60,7 @@ src: ./slides.traces.md
 ---
 src: ./slides.metriques.md
 ---
+
+---
+src: ./slides.baggage.md
+---
