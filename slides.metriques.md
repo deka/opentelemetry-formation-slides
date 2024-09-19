@@ -80,15 +80,15 @@ level: 3
 <p class="absolute right-5 top-5 text-3xl"> Les Métriques </p>
 
 ### Instrumentation synchrone
-- Collecte à <b>interval régulier</b>
+- ~~Collecte à <b>interval régulier</b>~~ Collecte via un appel dans le flux principal de l'application
 - Impact régulier et prévisible sur les performances
 - Vue régulière et cohérente dans le temps
-- Exemple : Nombre de reqêtes par seconde, CPU ...  
+- Exemple : Nombre de reqêtes par seconde,  ~~CPU~~ ...  
 
 <br />
 
 ### Instrumentation asynchrone
-- Collecte basée sur des <b>événements</b>, indépendamment du cycle de collecte principal.
+- Collecte basée sur des ~~<b>événements</b>~~ fonctions de rappel (callback), indépendamment du flux d'exécution ~~cycle de collecte~~ principal.
 - Impacte plus faible sur les performances, mais irrégulier.
 - Utile pour les mesures qui changent moins fréquemment, et qui sont coûteuses à collecter.
 - Exemple : Taille d'une file d'attente de message
@@ -176,6 +176,7 @@ rate(http_requests_total[5m])
 http_requests_total{method="POST"} +  
   http_requests_total{method="GET"}
 ```
+
 ### Fonctions d'aggération
 sum(), count(), avg(), min(), max(), ...
 
@@ -253,3 +254,14 @@ layout: image
 image: /images/red_formula.png
 backgroundSize: contain
 ---
+
+
+---
+transition: fade-out
+level: 3
+---
+
+ # Zoom: Les quantiles / percentiles
+
+
+[Comprendre les quantiles](https://mcorbin.fr/posts/2023-07-04-metriques/)
